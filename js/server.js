@@ -1,6 +1,4 @@
-console.log("start apliakcji");
 var io = require('socket.io').listen(4000);
-console.log("dolaczenie socketio");
 var usersDatabase = [];
 
 io.sockets.on("connection", function(socket){
