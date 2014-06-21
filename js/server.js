@@ -15,6 +15,8 @@ app.get("/", function(req, res) {
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
+
+app.use(express.static(__dirname));
  
 
 io.sockets.on("connection", function(socket){
