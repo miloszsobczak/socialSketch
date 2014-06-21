@@ -1,0 +1,11 @@
+{
+  "name": "socialSketch",
+  "version": "0.1.0",
+  "author": {
+  	"name": "Miłosz Sobczak",
+  	"email": "kontakt@miloszsobczak.pl"
+  },	
+  "dependencies": {
+    "socket.io" :">=1.0.2"
+  }
+}
