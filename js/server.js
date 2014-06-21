@@ -1,7 +1,8 @@
 var io = require('socket.io').listen(4000),
 	express = require('express'),
 	app = express(),
-	port = Number(process.env.PORT || 5000);
+	port = Number(process.env.PORT || 5000),
+	path = require("path");
 
 var usersDatabase = [];
 
