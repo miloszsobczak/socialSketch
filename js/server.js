@@ -1,6 +1,7 @@
 var io = require('socket.io').listen(4000),
 	express = require('express'),
-	app = express();
+	app = express(),
+	port = Number(process.env.PORT || 5000);
 
 var usersDatabase = [];
 
@@ -8,6 +9,10 @@ var usersDatabase = [];
 // console.log(app);
 app.get("/", function(req, res) {
     res.sendfile('../index.html')
+});
+
+app.listen(port, function() {
+  console.log("Listening on " + port);
 });
  
 
