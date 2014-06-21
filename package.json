@@ -1,5 +1,6 @@
 {
-  "name": "socialSketch",
+  "name": "Canvasio",
+  "description": "Simple app for training making social sketching much more easy",
   "version": "0.1.0",
   "author": {
   	"name": "Miłosz Sobczak",
@@ -8,5 +9,13 @@
   "dependencies": {
     "socket.io" :">=1.0.2",
     "express" : "3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miloszsobczak/socialSketch"
+  },
+  "license": "GNU AGPLv3",
+  "engines": {
+    "node": "0.10.x"
   }
 }
