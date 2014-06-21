@@ -1,5 +1,5 @@
 ;(function(){
-	var socket = io('http://192.168.100.2:4000'),
+	var socket = io('http://127.0.0.1:4000'),
 		Application;
 
 	var Canvas = function(canvasSelector){

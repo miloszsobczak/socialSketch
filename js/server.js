@@ -1,5 +1,15 @@
-var io = require('socket.io').listen(4000);
+var io = require('socket.io').listen(4000),
+	express = require('express'),
+	app = express();
+
 var usersDatabase = [];
+
+// serves main page
+// console.log(app);
+app.get("/", function(req, res) {
+    res.sendfile('../index.html')
+});
+ 
 
 io.sockets.on("connection", function(socket){
 	console.log("dołączył nowy użytkownik: " + socket.id);
