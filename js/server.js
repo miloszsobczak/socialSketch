@@ -9,7 +9,7 @@ var usersDatabase = [];
 // serves main page
 // console.log(app);
 app.get("/", function(req, res) {
-    res.sendfile(path.resolve('../index.html'));
+    res.sendfile("." + path.resolve('../index.html'));
 });
 
 app.listen(port, function() {
