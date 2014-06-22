@@ -1,5 +1,5 @@
 ;(function(){
-	var socket = io(window.location.hostname+":4000"),
+	var socket = io(window.location.hostname),
 		Application;
 
 	var Canvas = function(canvasSelector){

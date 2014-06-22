@@ -1,5 +1,4 @@
-var io = require('socket.io').listen(4000),
-	express = require('express'),
+var express = require('express'),
 	app = express(),
 	port = Number(process.env.PORT || 5000),
 	path = require("path");
@@ -15,9 +14,10 @@ app.get("/", function(req, res) {
 
 app.use(express.static(__dirname));
 
-app.listen(port, function() {
+var server = app.listen(port, function() {
   console.log("Listening on " + port);
-});
+}),
+io = require('socket.io').listen(server);
 
 
 io.sockets.on("connection", function(socket){
